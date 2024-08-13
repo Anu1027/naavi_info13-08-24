@@ -1,0 +1,76 @@
+.whitepaper-page {
+  padding: 2rem;
+  background-color: #f8f9fa;
+  max-height: 100vh;
+  overflow-y: auto;
+
+  h1 {
+    font-size: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2.5rem;
+    color: #023992;
+    font-weight: 600;
+    text-align: center;
+  }
+
+  .content-box-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    @media (min-width: 768px) {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+  }
+
+  .content-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; // Ensure the button is at the bottom
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    flex: 1;
+    max-width: 100%;
+
+    @media (min-width: 768px) {
+      max-width: 30%;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      color: #f87604;
+    }
+
+    p {
+      font-size: 1.0rem;
+      line-height: 1.6;
+      color: #040405;
+      margin-bottom: 1.5rem;
+      flex-grow: 1; // Ensure the text section grows to take available space
+    }
+
+    .download-button {
+      align-self: center; // Center the button horizontally
+      background: linear-gradient(89deg, #47b4d5 0%, #29449d 100%);
+      border: none;
+      color: white;
+      font-weight: 500;
+      border-radius: 35px;
+      padding: 0.7rem 1.5rem;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: all ease 0.2s;
+      margin-top: auto; // Push the button to the bottom
+
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+  }
+}

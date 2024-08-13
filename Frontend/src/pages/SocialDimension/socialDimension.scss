@@ -1,0 +1,287 @@
+.SocialDimensionPage {
+  width: 100%;
+  height: 100%;
+  overflow-y: hidden;
+
+  .navbar {
+    width: 100%;
+    height: 4rem;
+    padding: 0 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+
+    .hamMenu-home {
+      display: none;
+      position: absolute;
+      left: 1rem;
+      height: 100%;
+
+      img {
+        width: 20px;
+      }
+    }
+
+    .logo {
+      display: flex;
+      cursor: pointer;
+      transition: all ease 0.2s;
+
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+
+    .menu-items {
+      display: flex;
+      gap: 2rem;
+      align-items: center;
+      font-size: 0.9rem;
+
+      p {
+        margin: 0;
+        cursor: pointer;
+        transition: all ease 0.2s;
+        font-family: 'Inter', sans-serif !important;
+
+        &:hover {
+          transform: scale(1.05);
+        }
+      }
+    }
+  }
+
+  .mobile-menu {
+    display: none; // Initially hidden
+    position: absolute;
+    top: 4rem; // Position below the navbar
+    left: 0;
+    width: 50%;
+    background-color: white; // Background color for the menu
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); // Shadow for depth
+    z-index: 1000; // Ensure it appears above other elements
+
+    div {
+      padding: 1rem;
+      cursor: pointer;
+      transition: background-color 0.2s;
+
+      &:hover {
+        background-color: #f0f0f0; // Change background on hover
+      }
+    }
+  }
+
+  .btns-div {
+    display: flex;
+    gap: 1rem;
+
+    .gs-Btn {
+      color: white;
+      font-weight: 500;
+      border-radius: 35px;
+      background: linear-gradient(89deg, #47b4d5 0%, #29449d 100%);
+      padding: 0.7rem 1.5rem;
+      font-size: 0.8rem;
+    }
+
+    .business-btn {
+      color: white;
+      font-weight: 500;
+      border-radius: 35px;
+      background: #100f0d;
+      padding: 0.5rem 1.5rem;
+    }
+
+    div {
+      cursor: pointer;
+      transition: all ease 0.2s;
+
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+  }
+
+  .menu-item.active {
+    color: black; // Change active link color to black
+    text-decoration: none; // Ensure underline is removed
+    font-weight: bold; // Optional: make the active item bold
+  }
+
+  .color-box {
+    width: 100%;
+    height: 1rem;
+    background: linear-gradient(89deg, #47b4d5 0%, #29449d 100%);
+  }
+
+  .socialDimension {
+    width: 100%;
+    height: calc(100% - 5rem);
+    overflow-y: auto;
+    padding: 1rem;
+
+    .main-heading {
+      font-size: 2.0rem; // Adjust font size if needed
+      color: #29449d;  // Example color, change to your preferred color
+      margin-bottom: 1rem; // Space below the heading
+    }
+
+    .content {
+      padding: 1rem;
+
+      .heading {
+        font-size: 2.0rem; // Adjust the font size for headings if needed
+        padding-bottom: 2rem;
+        color:  #29449d; 
+      }
+
+      .subheading {
+        font-size: 1rem; // Ensures all subheading text has the same size
+        line-height: 2.0; // Improves readability
+        margin-bottom: 1.5rem; // Adjust spacing between paragraphs
+      }
+
+      .highlight {
+        color:  #f76d04;
+        font-weight: bold; // Highlight text for emphasis
+      }
+
+      .animated-text {
+        font-size: 1rem; // Consistent font size for animated text
+        line-height: 1.6; // Improves readability
+        margin-bottom: 0.5rem; // Space between lines
+      }
+    }
+
+    .chart-image {
+      width: 100%;
+      height: auto;
+      padding-right: 5rem;
+      object-fit: contain;
+    }
+
+    .image-container {
+      display: flex;
+      justify-content: flex-start;
+      padding: 1rem;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    .SD-image {
+      max-width: 70%;
+      margin-top: -130px;
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+    }
+  }
+
+  span {
+    color: #29449d;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .SocialDimensionPage {
+    .navbar {
+      padding: 0 1rem;
+      justify-content: center;  // Center the logo in the navbar
+      position: relative;       // Allows for absolute positioning of the hamburger icon
+
+      .hamMenu-home {
+        display: flex;
+        position: absolute;
+        left: 1rem;            // Keep the hamburger icon on the left
+      }
+
+      .logo {
+        display: flex;
+        justify-content: center;
+        position: absolute;    // Center the logo
+        left: 50%;
+        transform: translateX(-50%);
+      }
+
+      .menu-items {
+        display: none; // Hide desktop menu
+      }
+
+      .btns-div {
+        display: none;
+      }
+    }
+
+    .color-box {
+      height: 0.5rem;
+    }
+
+    .socialDimension {
+      padding: 0.5rem;
+
+      .chart-image,
+      .image-container img {
+        padding: 0.5rem;
+      }
+
+      .SD-image {
+        max-width: 100%;
+        margin-top: -10px;
+      }
+    }
+
+    .mobile-menu {
+      display: block; // Show the mobile menu when hamburger is clicked
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .SocialDimensionPage {
+    .navbar {
+      flex-direction: row; // Aligns hamburger and logo in a row
+      align-items: center;
+      padding: 0 1rem; // Adjusts padding for a consistent look
+      justify-content: center;
+      position: relative;
+
+      .hamMenu-home {
+        left: 1rem;            // Keep the hamburger icon on the left
+      }
+
+      .logo {
+        position: absolute;    // Center the logo
+        left: 50%;
+        transform: translateX(-50%);
+      }
+
+      .menu-items {
+        display: none; // Hide menu items for small screens
+      }
+    }
+
+    .color-box {
+      height: 0.3rem;
+    }
+
+    .socialDimension {
+      padding: 0.5rem;
+
+      .chart-image,
+      .image-container img {
+        padding: 0.5rem;
+      }
+
+      .SD-image {
+        max-width: 100%;
+        margin-top: -10px;
+      }
+    }
+  }
+}

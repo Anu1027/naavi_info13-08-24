@@ -1,0 +1,349 @@
+.homepage {
+  width: 100%;
+  height: 100%;
+  overflow-y: hidden;
+
+  .navbar {
+    width: 100%;
+    height: 4rem;
+    padding: 0 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+
+    .hamMenu-home {
+      display: none; // Default hidden, shown only on mobile
+      position: absolute;
+      left: 1rem;
+      height: 100%;
+
+      img {
+        width: 20px;
+      }
+    }
+
+    .logo {
+      display: flex;
+    }
+
+    .menu-items {
+      display: flex;
+      gap: 2rem;
+      align-items: center;
+      font-size: 0.9rem;
+
+      p {
+        margin: 0;
+        cursor: pointer;
+        transition: all ease 0.2s;
+
+        &:hover {
+          transform: scale(1.05);
+        }
+      }
+
+      a {
+        text-decoration: none;
+        color: black;
+      }
+    }
+  }
+
+  .color-box {
+    width: 100%;
+    height: 1rem;
+    background: linear-gradient(89deg, #47b4d5 0%, #29449d 100%);
+  }
+
+  .homepage-content {
+    width: 100%;
+    height: calc(100% - 5rem);
+    overflow-y: auto;
+
+    .cover-Img {
+      width: 100%;
+      position: relative;
+
+      img {
+        width: 100%;
+        height: 80vh;
+        z-index: 1;
+        min-height: 100%;
+      }
+
+      .background-tint {
+        position: absolute;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.19);
+        z-index: 2;
+        bottom: 1%;
+      }
+
+      .mid-text {
+        align-items: center;
+        color: #fff;
+        display: flex;
+        font-size: 3rem;
+        font-weight: 700;
+        inset: 0;
+        bottom: 8rem;
+        justify-content: center;
+        position: absolute;
+        z-index: 3;
+        top: 150px;
+      }
+
+      .background-tint1 {
+        background: rgba(183, 214, 244, 0.65);
+        width: 100%;
+        z-index: 3;
+        bottom: 0.5%;
+        left: 0;
+        height: 5rem;
+        position: absolute;
+      }
+
+      .input-box-container {
+        position: absolute;
+        z-index: 4;
+        height: 5rem;
+        bottom: 0.5%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+
+        .createPath-btn {
+          z-index: 4;
+          height: 3rem;
+          display: flex;
+          color: white;
+          background: linear-gradient(89deg, #47b4d5 0%, #29449d 100%);
+          border-radius: 45px;
+          padding: 0 2rem;
+          justify-content: center;
+          align-items: center;
+          font-weight: 1000;
+          cursor: pointer;
+          transition: all ease 0.2s;
+          font-size: 0.9rem;
+
+          &:hover {
+            transform: scale(1.05);
+          }
+        }
+      }
+    }
+
+    .cover-Img-mobile {
+      width: 100%;
+      position: relative;
+      display: none;
+
+      img {
+        width: 100%;
+        z-index: 1;
+        min-height: 100%;
+      }
+
+      .background-tint-mobile {
+        position: absolute;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.19);
+        z-index: 2;
+      }
+
+      .mid-text-mobile {
+        align-items: center;
+        color: #fff;
+        display: flex;
+        font-size: 1rem;
+        font-weight: 700;
+        inset: 0;
+        top: -7rem;
+        justify-content: center;
+        position: absolute;
+        z-index: 3;
+        width: 100%;
+        text-align: center;
+      }
+
+      .background-tint1-mobile {
+        background: rgba(0, 0, 0, 0.65);
+        width: 100%;
+        z-index: 3;
+        left: 0;
+        height: 5rem;
+        position: absolute;
+        bottom: 0;
+      }
+
+      .input-box-container-mobile {
+        position: absolute;
+        z-index: 4;
+        height: 7rem;
+        bottom: 1rem;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+
+        .createPath-btn-mobile {
+          z-index: 4;
+          height: 2.5rem;
+          display: flex;
+          color: white;
+          background: linear-gradient(89deg, #47b4d5 0%, #29449d 100%);
+          border-radius: 45px;
+          padding: 0 2rem;
+          justify-content: center;
+          align-items: center;
+          font-weight: 600;
+          transition: all ease 0.2s;
+          font-size: 0.9rem;
+          position: absolute;
+          top: 4.3rem;
+        }
+      }
+
+      .menu-items-mobile {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        position: absolute;
+        left: 0;
+        width: 20%;
+        background: white;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        padding: 1rem;
+        z-index: 1000;
+
+        p {
+          text-align: center;
+          margin: 0;
+          cursor: pointer;
+          color: black; // Ensure text color is black
+          text-decoration: none; // Remove underline
+        }
+      }
+    }
+
+    .aboutNaavi {
+      padding: 1rem;
+      text-align: left;
+
+      h2 {
+        margin-bottom: 0.5rem; /* Adjusted for spacing */
+        font-size: 2rem;
+        color: #29449d; 
+      }
+
+      .aboutNaavi-list {
+        list-style-type: none;
+      
+
+        .aboutNaavi-list-item {
+          background-color: #fff; /* White background for the card */
+          border-radius: 8px; /* Rounded corners */
+          padding: 16px; /* Padding inside the card */
+          margin-bottom: 1rem; /* Space between card items */
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+          transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition effect */
+          font-size: 1rem;
+          line-height: 1.6; /* Line height for better readability */
+          text-align: justify; /* Align text evenly */
+          position: relative; /* Needed for absolute positioning of bullet points */
+
+
+          &:hover {
+            transform: translateY(-5px); /* Slight lift effect on hover */
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Increased shadow on hover */
+          }
+
+          &::before {
+            content: "->"; /* Custom bullet point */
+            position: absolute;
+            left: -4rem; /* Adjust according to padding */
+            color: #29449d; /* Bullet color */
+            font-size: 2rem; /* Increase bullet size */
+            top: 50%;
+            transform: translateY(-50%);
+          }
+
+        }
+
+      }
+
+      img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+      }
+    }
+
+    .footer {
+      background: linear-gradient(89deg, #47b4d5 0%, #29449d 100%);
+      margin-bottom: -15px;
+      padding: 1rem 0;
+
+      p {
+        margin: 0;
+        font-size: 0.9rem;
+      }
+    }
+  }
+
+  @media screen and (max-width: 1200px) {
+    .navbar {
+      padding: 0 4rem; /* Adjusted for medium screens */
+    }
+    .aboutNaavi-list-item::before {
+      left: -2rem !important; /* Adjusted for screens between 1200px and 800px */
+    }
+    
+  }
+
+  @media screen and (max-width: 800px) {
+    .navbar {
+      .hamMenu-home {
+        display: flex; // Show hamburger menu on mobile
+      }
+      .menu-items {
+        display: none; // Hide menu items by default
+      }
+    }
+    .color-box {
+      height: 0.5rem;
+    }
+    .homepage-content {
+      height: calc(100% - 4.5rem);
+
+      .cover-Img {
+        display: none; // Hide desktop image on mobile
+      }
+      .cover-Img-mobile {
+        display: flex; // Show mobile image
+      }
+      .aboutNaavi-list-item::before {
+        left: -2.5rem !important; /* Test with !important */
+      }
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .navbar {
+      flex-direction: column;
+      padding: 1rem;
+      .hamMenu-home {
+        width: 100%;
+        text-align: center;
+      }
+      .aboutNaavi-list-item::before {
+        left: -2.5rem !important; /* Adjusted for screens between 1200px and 800px */
+      }
+    }
+  }
+}
