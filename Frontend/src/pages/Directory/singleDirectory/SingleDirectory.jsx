@@ -140,7 +140,7 @@ const SingleDirectory = () => {
             }}
           >
             <p style={{ fontWeight: preLoginMenu === "About Us" ? "600" : "" }}>
-              About Naavi
+              Abot Naavi
             </p>
           </div>
           <div
