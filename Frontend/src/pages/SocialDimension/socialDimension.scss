@@ -153,6 +153,22 @@
         line-height: 1.6; // Improves readability
         margin-bottom: 0.5rem; // Space between lines
       }
+
+      .card {
+        background-color: #fff; // Background color for the card
+        border-radius: 8px; // Rounded corners for the card
+        padding: 0.5rem; // Padding inside the card
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+        margin-bottom: 1rem; // Space below each card
+        transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition effect */
+        border-color: #f0f0f0;
+
+        &:hover {
+          transform: translateY(-5px); /* Slight lift effect on hover */
+          box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Increased shadow on hover */
+        }
+
+      }
     }
 
     .chart-image {

@@ -92,22 +92,32 @@ const SocialDimension = () => {
           <div className="col-md-6">
             <div className="content">
               <h3 className="heading">Social Inequality in Higher Education</h3>
-              <p className="subheading">
-                <span className="highlight">Social Dimension:</span> Following the Bologna process, German higher education has seen increased social stratification,
-                disproportionately affecting students from disadvantaged and migrant backgrounds
-              </p>
-              <p className="subheading">
-                <span className="highlight">Dropout Risks:</span> Immigrant and working-class students face lower grades and a higher dropout risk, leading to increased chances of academic failure
-              </p>
+              <div className="card">
+                <p className="subheading">
+                  <span className="highlight">Social Dimension:</span> Following the Bologna process, German higher education has seen increased social stratification,
+                  disproportionately affecting students from disadvantaged and migrant backgrounds
+                </p>
+              </div>
+              <div className="card">
+                <p className="subheading">
+                  <span className="highlight">Dropout Risks:</span> Immigrant and working-class students face lower grades and a higher dropout risk, leading to increased chances of academic failure
+                </p>
+              </div>
             </div>
           </div>
         </div>
         <div className="row my-5">
           <h2 className="main-heading">Decision Delusion Problem</h2>
           <div className="col-md-6 my-4">
-            <p className="animated-text">Due to the lack of Personalised education pathways students often choose generic study option</p>
-            <p className="animated-text">Many students, who do not fit standard educational prospects, fall through the cracks</p>
-            <p className="animated-text">This situation leads to disengagement, low motivation and mismatched careers</p>
+            <div className="card">
+              <p className="animated-text">Due to the lack of Personalised education pathways students often choose generic study option</p>
+            </div>
+            <div className="card">
+              <p className="animated-text">Many students, who do not fit standard educational prospects, fall through the cracks</p>
+            </div>
+            <div className="card">
+              <p className="animated-text">This situation leads to disengagement, low motivation and mismatched careers</p>
+            </div>
           </div>
           <div className="col-md-6">
             <img className="SD-image" src={SD} alt="SD" />
