@@ -58,7 +58,7 @@ const Technology = () => {
             }}
           >
             <p style={{ fontWeight: preLoginMenu === "About Us" ? "600" : "" }}>
-              About naavi
+              Abot naavi
             </p>
           </div>
           <div
