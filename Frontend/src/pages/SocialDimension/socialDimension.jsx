@@ -109,13 +109,13 @@ const SocialDimension = () => {
         <div className="row my-5">
           <h2 className="main-heading">Decision Delusion Problem</h2>
           <div className="col-md-6 my-4">
-            <div className="card">
+            <div className="card custom-card">
               <p className="animated-text">Due to the lack of Personalised education pathways students often choose generic study option</p>
             </div>
-            <div className="card">
+            <div className="card custom-card">
               <p className="animated-text">Many students, who do not fit standard educational prospects, fall through the cracks</p>
             </div>
-            <div className="card">
+            <div className="card custom-card">
               <p className="animated-text">This situation leads to disengagement, low motivation and mismatched careers</p>
             </div>
           </div>

@@ -94,11 +94,6 @@
     background: linear-gradient(89deg, #47b4d5 0%, #29449d 100%);
   }
 
-  .pathImage {
-    width: 90%;
-    height: 90%;
-  }
-
   .points {
     list-style-type: none;
     margin-bottom: 20px;
@@ -112,30 +107,58 @@
   .firstImage {
     width: 100%;
     padding-left: 100px;
+    margin-top: -60px; // Adjust this value as needed to move the image up
+
+    @media screen and (max-width: 800px) {
+      padding-left: 0;
+      margin-top: -10px; // Adjust this value for mobile view
+    }
   }
 
   .llm-synergised-text {
     margin-top: 50px; // Adjust the margin as needed
     padding-left: 20px;
-
+  
     ul {
-      padding-left: 0;
+      padding-left: 2rem; // Adjust padding to account for custom bullet position
+      list-style: none; // Remove default bullet points
+      position: relative;
     }
-
+  
     li {
-      margin-bottom: 5px; // Adjust the space between the list items
+      background-color: #fff; // Background color for the card
+      border-radius: 8px; // Rounded corners for the card
+      padding:1rem !important; // Padding inside the card
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+      margin-bottom: 1.5rem !important; // Space below each card
+      transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition effect */
+      border: 1px solid #f0f0f0; // Border color for the card
+      cursor: pointer;
+      position: relative; // Required for the ::before pseudo-element
+  
+      &::before {
+        content: "->"; /* Custom bullet point */
+        position: absolute;
+        left: -4rem; /* Adjust according to padding */
+        color: #29449d; /* Bullet color */
+        font-size: 2rem; /* Bullet size */
+        top: 50%;
+        transform: translateY(-50%);
+      }
+  
+      &:hover {
+        transform: translateY(-5px); /* Slight lift effect on hover */
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Increased shadow on hover */
+      }
     }
   }
+  
+  
+
   .kg-title {
     font-size: 2rem;  // Adjust the font size
     font-weight: 600;   // Adjust the font weight
     color: #29449d;     // Adjust the color
-  }
-  .pathway-title {
-    font-size: 2rem;  // Adjust the font size
-    font-weight: 700;   // Adjust the font weight
-    color: #29449d;     // Adjust the color
-    margin-bottom: 2rem; // Adjust the margin bottom
   }
 
   @media screen and (max-width: 800px) {

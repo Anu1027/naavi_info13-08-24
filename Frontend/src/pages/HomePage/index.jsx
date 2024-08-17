@@ -59,7 +59,7 @@ const HomePage = () => {
             style={{ color: 'black', textDecoration: 'none' }} // No underline, black color
           >
             <p style={{ fontWeight: preLoginMenu === "About Us" ? "600" : "" }}>
-              Abot naavi
+              About naavi
             </p>
           </a>
           <div

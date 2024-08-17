@@ -5,36 +5,12 @@ import "./Technology.scss";
 
 import logo from "../../static/images/logo.svg";
 import hamIcon from "../../static/images/icons/hamIcon.svg";
-import pathEnginee from "../../static/images/path-engine.jpg";
-import tickPath from "../../static/images/tick.png";
+// import tickPath from "../../static/images/tick.png";
 import firstImg from "../../static/images/first1.png";
 
 const Technology = () => {
   const navigate = useNavigate();
   const { preLoginMenu, setPreLoginMenu } = useCoinContextData();
-
-  const pathEngine = [
-    {
-      id: 1,
-      point: "Education Knowledge Graphs: Building the knowledge graphs for diverse higher education and other opportunities, while consistently updating them to reﬂect changes in the educational landscape",
-    },
-    {
-      id: 2,
-      point: "LLMs Synergising: Unifying knowledge representation with focus on reasoning in order to provide personalised recommendations",
-    },
-    {
-      id: 3,
-      point: "Pathway Generation: Synergised LLMs to generate personalised education pathways based on user input, considering factors like interests, goals, time constraints, and prerequisites",
-    },
-    {
-      id: 4,
-      point: "User Interaction and Gamiﬁed development: for active participation and continuous engagement, ultimately contributing to a more immersive and effective interaction with the platform or application",
-    },
-    // {
-    //   id: 5,
-    //   point: "Algorithms free from any kind of biases enabling career navigation and career transitions",
-    // },
-  ]
 
   return (
     <div className='TechnologyPage'>
@@ -58,7 +34,7 @@ const Technology = () => {
             }}
           >
             <p style={{ fontWeight: preLoginMenu === "About Us" ? "600" : "" }}>
-              Abot naavi
+              About naavi
             </p>
           </div>
           <div
@@ -105,22 +81,6 @@ const Technology = () => {
       </div>
       <div className="color-box"></div>
       <div className="pathEngine container py-5">
-        <div className="row">
-          <div className="col-md-6">
-            <img className="pathImage mt-lg-4" src={pathEnginee} alt="" />
-          </div>
-          <div className="col-md-6">
-            <h1 className='mb-3 fw-bold pathway-title'>Personalised Education Pathways using Generative AI</h1>
-            <div className="">
-              {pathEngine.map((e) => (
-                <ul key={e.id} className="d-flex">
-                  <img className="tickImage" src={tickPath} alt="" />
-                  <li className="points shadow bg-white p-2 rounded">{e.point}</li>
-                </ul>
-              ))}
-            </div>
-          </div>
-        </div>
         <div className="row mt-5">
           <h1 className="fw-bold mb-3 kg-title">LLMs-Synergised with Knowledge Graphs (KG)</h1>
           <div className="col-md-6">

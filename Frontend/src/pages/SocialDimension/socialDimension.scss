@@ -148,11 +148,11 @@
         font-weight: bold; // Highlight text for emphasis
       }
 
-      .animated-text {
-        font-size: 1rem; // Consistent font size for animated text
-        line-height: 1.6; // Improves readability
-        margin-bottom: 0.5rem; // Space between lines
-      }
+      // .animated-text {
+      //   font-size: 1rem; // Consistent font size for animated text
+      //   line-height: 1.6; // Improves readability
+      //   margin-bottom: 0.5rem; // Space between lines
+      // }
 
       .card {
         background-color: #fff; // Background color for the card
@@ -167,10 +167,27 @@
           transform: translateY(-5px); /* Slight lift effect on hover */
           box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Increased shadow on hover */
         }
+      
+        
 
       }
     }
+    .card.custom-card {
+      background-color: #fff;
+      padding: 8px;
+      margin-bottom: 8px;
+      border-radius: 15px;
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+      height: 80px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      border-color: #f0f0f0;
 
+      &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+      }
+    }
+    
     .chart-image {
       width: 100%;
       height: auto;
