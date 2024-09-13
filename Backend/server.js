@@ -48,9 +48,9 @@ conn.once('open', () => {
   gfs = bucket;
 
   // Upload PDFs after the connection is open
-  uploadPdfToDB('AI-METHODLOGY.pdf', path.join(__dirname, 'Papers', 'AI-METHODLOGY.pdf'));
-  uploadPdfToDB('KGs+LLMs.pdf', path.join(__dirname, 'Papers', 'KGs+LLMs.pdf'));
-  uploadPdfToDB('DP-OPT.pdf', path.join(__dirname, 'Papers', 'DP-OPT.pdf'));
+  uploadPdfToDB('AI-METHODLOGY.pdf', path.join(__dirname, 'papers', 'AI-METHODLOGY.pdf'));
+  uploadPdfToDB('KGs+LLMs.pdf', path.join(__dirname, 'papers', 'KGs+LLMs.pdf'));
+  uploadPdfToDB('DP-OPT.pdf', path.join(__dirname, 'papers', 'DP-OPT.pdf'));
 });
 
 // Function to upload PDF to MongoDB
