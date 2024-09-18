@@ -27,4 +27,4 @@ jobs:
 
       - name: Deploy to server
         run: |
-         ssh ubuntu@13.233.152.98 'bash /home/ubuntu/naavi_info13-08-24/deploy.sh
+         ssh ubuntu@13.233.152.98 'bash /home/ubuntu/naavi_info13-08-24/deploy.sh'
