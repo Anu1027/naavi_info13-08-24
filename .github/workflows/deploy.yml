@@ -27,8 +27,4 @@ jobs:
 
       - name: Deploy to server
         run: |
-          # Copy deploy script to the server
-          scp -o StrictHostKeyChecking=no deploy.sh ubuntu@13.233.152.98:/home/ubuntu/naavi_info13-08-24/deploy.sh
-          
-          # Execute deploy script on the server
-          ssh -o StrictHostKeyChecking=no ubuntu@13.233.152.98 'bash /home/ubuntu/naavi_info13-08-24/deploy.sh'
+         ssh ubuntu@13.233.152.98 'bash /home/ubuntu/naavi_info13-08-24/deploy.sh
